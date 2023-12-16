@@ -15,6 +15,7 @@
 		A58EA9BB2B2E19770089B1BD /* StockRankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58EA9BA2B2E19770089B1BD /* StockRankUITests.swift */; };
 		A58EA9BD2B2E19770089B1BD /* StockRankUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58EA9BC2B2E19770089B1BD /* StockRankUITestsLaunchTests.swift */; };
 		A58EA9CA2B2E19AA0089B1BD /* StockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58EA9C92B2E19AA0089B1BD /* StockModel.swift */; };
+		A58EA9CC2B2E1D570089B1BD /* StockRankRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58EA9CB2B2E1D570089B1BD /* StockRankRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		A58EA9BA2B2E19770089B1BD /* StockRankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRankUITests.swift; sourceTree = "<group>"; };
 		A58EA9BC2B2E19770089B1BD /* StockRankUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRankUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A58EA9C92B2E19AA0089B1BD /* StockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockModel.swift; sourceTree = "<group>"; };
+		A58EA9CB2B2E1D570089B1BD /* StockRankRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRankRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				A58EA99F2B2E19760089B1BD /* StockRankApp.swift */,
 				A58EA9C92B2E19AA0089B1BD /* StockModel.swift */,
 				A58EA9A12B2E19760089B1BD /* StockRankView.swift */,
+				A58EA9CB2B2E1D570089B1BD /* StockRankRow.swift */,
 				A58EA9A32B2E19770089B1BD /* Assets.xcassets */,
 				A58EA9A52B2E19770089B1BD /* Preview Content */,
 			);
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A58EA9A22B2E19760089B1BD /* StockRankView.swift in Sources */,
+				A58EA9CC2B2E1D570089B1BD /* StockRankRow.swift in Sources */,
 				A58EA9A02B2E19760089B1BD /* StockRankApp.swift in Sources */,
 				A58EA9CA2B2E19AA0089B1BD /* StockModel.swift in Sources */,
 			);
