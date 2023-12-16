@@ -9,7 +9,12 @@ import SwiftUI
 
 struct ImagView2: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Text("Left")
+            Spacer() // 이 Spacer는 왼쪽 텍스트와 오른쪽 텍스트 사이를 밀어냅니다.
+            Text("Right")
+        }
+        .padding() // HStack에 패딩을 추가합니다.
     }
 }
 
