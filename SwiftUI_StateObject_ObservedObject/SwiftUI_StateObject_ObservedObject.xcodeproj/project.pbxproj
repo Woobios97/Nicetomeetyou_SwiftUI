@@ -17,6 +17,7 @@
 		A5B03BEB2B33357100F322ED /* StockRankView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B03BEA2B33357100F322ED /* StockRankView.swift */; };
 		A5B03BED2B33358100F322ED /* StockRankRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B03BEC2B33358100F322ED /* StockRankRow.swift */; };
 		A5B03BEF2B33359400F322ED /* StockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B03BEE2B33359400F322ED /* StockDetailView.swift */; };
+		A5B03BF12B33365400F322ED /* StockRankViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B03BF02B33365400F322ED /* StockRankViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		A5B03BEA2B33357100F322ED /* StockRankView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRankView.swift; sourceTree = "<group>"; };
 		A5B03BEC2B33358100F322ED /* StockRankRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRankRow.swift; sourceTree = "<group>"; };
 		A5B03BEE2B33359400F322ED /* StockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailView.swift; sourceTree = "<group>"; };
+		A5B03BF02B33365400F322ED /* StockRankViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockRankViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				A5B03BBE2B33344A00F322ED /* SwiftUI_StateObject_ObservedObjectApp.swift */,
 				A5B03BE82B33355900F322ED /* StockModel.swift */,
 				A5B03BEA2B33357100F322ED /* StockRankView.swift */,
+				A5B03BF02B33365400F322ED /* StockRankViewModel.swift */,
 				A5B03BEC2B33358100F322ED /* StockRankRow.swift */,
 				A5B03BEE2B33359400F322ED /* StockDetailView.swift */,
 				A5B03BC22B33344B00F322ED /* Assets.xcassets */,
@@ -271,6 +274,7 @@
 				A5B03BED2B33358100F322ED /* StockRankRow.swift in Sources */,
 				A5B03BEB2B33357100F322ED /* StockRankView.swift in Sources */,
 				A5B03BBF2B33344A00F322ED /* SwiftUI_StateObject_ObservedObjectApp.swift in Sources */,
+				A5B03BF12B33365400F322ED /* StockRankViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
