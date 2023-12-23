@@ -17,6 +17,9 @@
 		A510EE082B3716BB0022637A /* FrameworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A510EE072B3716BB0022637A /* FrameworkCell.swift */; };
 		A510EE0A2B3716D60022637A /* FrameworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A510EE092B3716D60022637A /* FrameworkData.swift */; };
 		A510EE0C2B3716F50022637A /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A510EE0B2B3716F50022637A /* SafariView.swift */; };
+		A510EE0E2B371BE50022637A /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A510EE0D2B371BE50022637A /* FrameworkDetailView.swift */; };
+		A510EE102B371D680022637A /* FrameworkListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A510EE0F2B371D680022637A /* FrameworkListViewModel.swift */; };
+		A510EE122B3727430022637A /* FrameworkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A510EE112B3727430022637A /* FrameworkDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		A510EE072B3716BB0022637A /* FrameworkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkCell.swift; sourceTree = "<group>"; };
 		A510EE092B3716D60022637A /* FrameworkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkData.swift; sourceTree = "<group>"; };
 		A510EE0B2B3716F50022637A /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		A510EE0D2B371BE50022637A /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
+		A510EE0F2B371D680022637A /* FrameworkListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkListViewModel.swift; sourceTree = "<group>"; };
+		A510EE112B3727430022637A /* FrameworkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 			children = (
 				A510EDDD2B37168B0022637A /* SwiftUI_ModalApp.swift */,
 				A510EDDF2B37168B0022637A /* FrameworkListView.swift */,
+				A510EE0F2B371D680022637A /* FrameworkListViewModel.swift */,
+				A510EE0D2B371BE50022637A /* FrameworkDetailView.swift */,
+				A510EE112B3727430022637A /* FrameworkDetailViewModel.swift */,
 				A510EE072B3716BB0022637A /* FrameworkCell.swift */,
 				A510EE092B3716D60022637A /* FrameworkData.swift */,
 				A510EE0B2B3716F50022637A /* SafariView.swift */,
@@ -268,8 +277,11 @@
 			files = (
 				A510EDE02B37168B0022637A /* FrameworkListView.swift in Sources */,
 				A510EDDE2B37168B0022637A /* SwiftUI_ModalApp.swift in Sources */,
+				A510EE102B371D680022637A /* FrameworkListViewModel.swift in Sources */,
+				A510EE0E2B371BE50022637A /* FrameworkDetailView.swift in Sources */,
 				A510EE082B3716BB0022637A /* FrameworkCell.swift in Sources */,
 				A510EE0A2B3716D60022637A /* FrameworkData.swift in Sources */,
+				A510EE122B3727430022637A /* FrameworkDetailViewModel.swift in Sources */,
 				A510EE0C2B3716F50022637A /* SafariView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
