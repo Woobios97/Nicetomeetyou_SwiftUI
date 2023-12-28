@@ -20,19 +20,21 @@ struct ContentView: View {
                     Spacer()
                     Text("No shopping lists!")
                 }
-                
                 List {
                     ForEach(shoppingLists, id: \.id) { ShoppingList in
-                        VStack(alignment: .leading) {
-                            Text(ShoppingList.title)
-                            Text(ShoppingList.address)
-                                .opacity(0.4)
+                        NavigationLink {
+                            Text("목적지")
+                        } label: {
+                            VStack(alignment: .leading) {
+                                Text(ShoppingList.title)
+                                Text(ShoppingList.address)
+                                    .opacity(0.4)
+                            }
                         }
-                        
                     }.onDelete(perform: $shoppingLists.remove)
                 }
                 
-                    .navigationTitle("Grocery App")
+                .navigationTitle("Grocery App")
             }
             .sheet(isPresented: $isPresented, content: {
                 AddShoppingListScreen()
