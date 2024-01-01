@@ -19,6 +19,7 @@
 		A5B5DFF52B3DD6B00022F11F /* AddShoppingListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B5DFF42B3DD6B00022F11F /* AddShoppingListScreen.swift */; };
 		A5B5DFF82B3DD7BB0022F11F /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B5DFF72B3DD7BB0022F11F /* ShoppingList.swift */; };
 		A5B5DFFA2B3DDBCD0022F11F /* ShoppingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B5DFF92B3DDBCD0022F11F /* ShoppingItem.swift */; };
+		A5B5DFFD2B3DDDCA0022F11F /* Migrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B5DFFC2B3DDDCA0022F11F /* Migrator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		A5B5DFF42B3DD6B00022F11F /* AddShoppingListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddShoppingListScreen.swift; sourceTree = "<group>"; };
 		A5B5DFF72B3DD7BB0022F11F /* ShoppingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
 		A5B5DFF92B3DDBCD0022F11F /* ShoppingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItem.swift; sourceTree = "<group>"; };
+		A5B5DFFC2B3DDDCA0022F11F /* Migrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Migrator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		A5B5DFC32B3DD4C20022F11F /* Realm_GroceryApp */ = {
 			isa = PBXGroup;
 			children = (
+				A5B5DFFB2B3DDDBE0022F11F /* Utils */,
 				A5B5DFF62B3DD7AB0022F11F /* Models */,
 				A5B5DFF32B3DD6A80022F11F /* Screens */,
 				A5B5DFC42B3DD4C20022F11F /* Realm_GroceryAppApp.swift */,
@@ -154,6 +157,14 @@
 				A5B5DFF92B3DDBCD0022F11F /* ShoppingItem.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A5B5DFFB2B3DDDBE0022F11F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A5B5DFFC2B3DDDCA0022F11F /* Migrator.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +306,7 @@
 			files = (
 				A5B5DFC72B3DD4C20022F11F /* ContentView.swift in Sources */,
 				A5B5DFF82B3DD7BB0022F11F /* ShoppingList.swift in Sources */,
+				A5B5DFFD2B3DDDCA0022F11F /* Migrator.swift in Sources */,
 				A5B5DFC52B3DD4C20022F11F /* Realm_GroceryAppApp.swift in Sources */,
 				A5B5DFFA2B3DDBCD0022F11F /* ShoppingItem.swift in Sources */,
 				A5B5DFF52B3DD6B00022F11F /* AddShoppingListScreen.swift in Sources */,

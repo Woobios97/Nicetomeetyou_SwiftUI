@@ -9,6 +9,9 @@ import SwiftUI
 
 @main
 struct Realm_GroceryAppApp: App {
+    
+    let migrator = Migrator()
+    
     var body: some Scene {
         WindowGroup {
             let _ = UserDefaults.standard.set(false, forKey: "_UIConstraintsBasedLayoutLogUnsatisfiable")
