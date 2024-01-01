@@ -2,7 +2,7 @@
 //  EmotionDiaryApp.swift
 //  EmotionDiary
 //
-//  Created by joonwon lee on 2022/07/02.
+//  Created by 김우섭 on 2022/07/02.
 //
 
 import SwiftUI
@@ -11,7 +11,8 @@ import SwiftUI
 struct EmotionDiaryApp: App {
     var body: some Scene {
         WindowGroup {
-            DiaryListView()
+            let vm = DiaryListViewModel()
+            DiaryListView(vm: vm)
         }
     }
 }

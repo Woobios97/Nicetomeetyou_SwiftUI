@@ -2,7 +2,7 @@
 //  DiaryDateInputView.swift
 //  EmotionDiary
 //
-//  Created by joonwon lee on 2022/07/02.
+//  Created by 김우섭 on 1/1/24.
 //
 
 import SwiftUI
