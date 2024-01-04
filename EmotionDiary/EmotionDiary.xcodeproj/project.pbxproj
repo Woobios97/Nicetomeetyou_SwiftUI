@@ -166,10 +166,10 @@
 		948F904A287009F600F90257 /* Diary Creation */ = {
 			isa = PBXGroup;
 			children = (
+				A5FF5E292B431153004DEE0E /* DiaryViewModel.swift */,
 				948F9041287009AE00F90257 /* DiaryDateInputView.swift */,
 				948F9043287009C000F90257 /* DiaryMoodInputView.swift */,
 				948F9045287009CB00F90257 /* DiaryTextInputView.swift */,
-				A5FF5E292B431153004DEE0E /* DiaryViewModel.swift */,
 			);
 			path = "Diary Creation";
 			sourceTree = "<group>";
