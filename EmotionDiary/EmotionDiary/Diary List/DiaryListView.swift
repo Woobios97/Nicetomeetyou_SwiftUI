@@ -28,19 +28,21 @@ struct DiaryListView: View {
      */
     
     var body: some View {
-        
         NavigationView {
-            
             VStack {
                 ScrollView {
                     LazyVGrid(columns: layout) {
-                        ForEach(vm.keys, id: \.self) { key in
+                        ForEach(vm.keys, id:\.self) { key in
                             Section {
                                 let items = vm.dic[key] ?? []
                                 let orderedItems = items.sorted(by: { $0.date < $1.date })
                                 ForEach(orderedItems) { item in
                                     NavigationLink {
-                                        DiaryDetailsView(diary: item)
+                                        let vm = DiaryDetailsViewModel(
+                                            diaries: $vm.list,
+                                            diary: item
+                                        )
+                                        DiaryDetailsView(vm: vm)
                                     } label: {
                                         MoodDiaryCell(diary: item)
                                             .frame(height: 50)
@@ -52,12 +54,15 @@ struct DiaryListView: View {
                             }
                             .frame(height: 60)
                             .padding()
+                            
+                            
                         }
                     }
                 }
+                
                 HStack {
                     Button {
-                        print("new button Tapped")
+                        print("New Button Tapped")
                         isPresenting = true
                     } label: {
                         Image(systemName: "plus")
@@ -67,15 +72,18 @@ struct DiaryListView: View {
                     }
                     .frame(width: 80, height: 80)
                     .foregroundColor(.white)
-                    .background(Color.cyan)
+                    .background(Color.pink)
                     .cornerRadius(40)
                 }
             }
-            .navigationTitle("감정 일기")
+            .navigationTitle("Emotion Diary")
         }
         .sheet(isPresented: $isPresenting) {
-            let vm = DiaryViewModel(isPresented: $isPresenting)
+            let vm = DiaryViewModel(isPresented: $isPresenting, diaries: $vm.list)
             DiaryDateInputView(vm: vm)
+        }
+        .onAppear {
+            vm.fetch()
         }
     }
 }
@@ -96,7 +104,6 @@ extension DiaryListView {
         let date = dateComponent.date!
         
         let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "ko-KR")
         formatter.dateFormat = "MMMM yyyy"
         return formatter.string(from: date)
     }
@@ -104,6 +111,6 @@ extension DiaryListView {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        DiaryListView(vm: DiaryListViewModel())
+        DiaryListView(vm: DiaryListViewModel(storage: MoodDiaryStorage()))
     }
 }
