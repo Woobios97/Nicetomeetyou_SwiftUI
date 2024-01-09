@@ -1,14 +1,14 @@
 //
-//  Realm_GroceryAppTests.swift
-//  Realm_GroceryAppTests
+//  RealmMigrationTests.swift
+//  RealmMigrationTests
 //
-//  Created by 김우섭 on 12/29/23.
+//  Created by woosub kim  on 1/9/24.
 //
 
 import XCTest
-@testable import Realm_GroceryApp
+@testable import RealmMigration
 
-final class Realm_GroceryAppTests: XCTestCase {
+final class RealmMigrationTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

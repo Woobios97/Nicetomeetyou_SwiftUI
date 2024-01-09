@@ -1,13 +1,13 @@
 //
-//  Realm_GroceryAppUITestsLaunchTests.swift
-//  Realm_GroceryAppUITests
+//  RealmMigrationUITestsLaunchTests.swift
+//  RealmMigrationUITests
 //
-//  Created by 김우섭 on 12/29/23.
+//  Created by woosub kim  on 1/9/24.
 //
 
 import XCTest
 
-final class Realm_GroceryAppUITestsLaunchTests: XCTestCase {
+final class RealmMigrationUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  Realm_GroceryApp
+//  RealmMigration
 //
-//  Created by 김우섭 on 12/29/23.
+//  Created by woosub kim  on 1/9/24.
 //
 
 import SwiftUI
@@ -16,25 +16,23 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
+                
                 if shoppingLists.isEmpty {
-                    Spacer()
                     Text("No shopping lists!")
                 }
+                
                 List {
-                    ForEach(shoppingLists, id: \.id) { ShoppingList in
-                        NavigationLink {
-                            Text("목적지")
-                        } label: {
-                            VStack(alignment: .leading) {
-                                Text(ShoppingList.title)
-                                Text(ShoppingList.address)
-                                    .opacity(0.4)
-                            }
+                    ForEach(shoppingLists, id: \.id) { shoppingList in
+                        VStack(alignment: .leading) {
+                            Text(shoppingList.title)
+                            Text(shoppingList.adress)
+                                .opacity(0.4)
                         }
-                    }.onDelete(perform: $shoppingLists.remove)
+                    }
+                    .onDelete(perform: $shoppingLists.remove)
                 }
                 
-                .navigationTitle("Grocery App")
+                    .navigationTitle("Grocery APP")
             }
             .sheet(isPresented: $isPresented, content: {
                 AddShoppingListScreen()

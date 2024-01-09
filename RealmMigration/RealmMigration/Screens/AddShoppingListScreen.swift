@@ -1,8 +1,8 @@
 //
 //  AddShoppingListScreen.swift
-//  Realm_GroceryApp
+//  RealmMigration
 //
-//  Created by 김우섭 on 12/29/23.
+//  Created by woosub kim  on 1/9/24.
 //
 
 import SwiftUI
@@ -14,32 +14,29 @@ struct AddShoppingListScreen: View {
     @State private var address: String = ""
     
     @ObservedResults(ShoppingList.self) var shoppingLists
-    
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
         NavigationView {
-            
             Form {
-                TextField("Enter title", text: $title)
-                TextField("Enter address", text: $address)
+                TextField("타이틀을 입력하세요", text: $title)
+                TextField("주소를 입력하세요", text: $address)
                 
                 Button {
-                    // 쇼핑 목록 생성
+                    
+                    // 쇼핑 리스트 저장하기
                     let shoppingList = ShoppingList()
                     shoppingList.title = title
-                    shoppingList.address = address
+                    shoppingList.adress = address
                     $shoppingLists.append(shoppingList)
                     
                     dismiss()
-                    
                 } label: {
-                    Text("save")
+                    Text("Save")
                         .frame(maxWidth: .infinity)
                 }.buttonStyle(.bordered)
             }
-            
-            .navigationTitle("New List")
+            .navigationTitle("새로운 리스트")
         }
     }
 }

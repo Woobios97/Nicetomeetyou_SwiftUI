@@ -1,8 +1,8 @@
 //
 //  Migrator.swift
-//  Realm_GroceryApp
+//  RealmMigration
 //
-//  Created by 김우섭 on 12/29/23.
+//  Created by woosub kim  on 1/9/24.
 //
 
 import Foundation
@@ -15,14 +15,16 @@ class Migrator {
     }
     
     func updateSchema() {
-        let config = Realm.Configuration(schemaVersion: 1) { migration, oldShemaVersion in
-            if oldShemaVersion < 1 {
-                // add new fields
+        let config = Realm.Configuration(schemaVersion: 1) { migration, oldSchemaVersion in
+            if oldSchemaVersion < 1 {
+                // 필드를 추가한다.
                 migration.enumerateObjects(ofType: ShoppingList.className()) { _, newObject in
                     newObject!["items"] = List<ShoppingItem>()
+//                    newObject!["number"] = ShoppingList().number
                 }
             }
         }
+        
         Realm.Configuration.defaultConfiguration = config
         let _ = try! Realm()
     }

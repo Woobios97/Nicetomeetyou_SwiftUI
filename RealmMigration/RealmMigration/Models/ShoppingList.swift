@@ -1,8 +1,8 @@
 //
 //  ShoppingList.swift
-//  Realm_GroceryApp
+//  RealmMigration
 //
-//  Created by 김우섭 on 12/29/23.
+//  Created by woosub kim  on 1/9/24.
 //
 
 import Foundation
@@ -12,10 +12,14 @@ class ShoppingList: Object, Identifiable {
     
     @Persisted(primaryKey: true) var id: ObjectId
     @Persisted var title: String
-    @Persisted var address: String
+    @Persisted var adress: String
+    @Persisted var number: Int
+    
+    @Persisted var items: List<ShoppingItem> = List<ShoppingItem>()
     
     override class func primaryKey() -> String? {
         "id"
     }
-    
 }
+
+
