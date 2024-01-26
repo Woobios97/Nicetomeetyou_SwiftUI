@@ -43,10 +43,6 @@ struct DiaryDateInputView: View {
                 }
             }
         }
-        
-        
-        
-        
     }
 }
 

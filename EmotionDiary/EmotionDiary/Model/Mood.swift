@@ -10,7 +10,7 @@
  CaseIterable
  ->
  Mood로 선언된 모든 Case에 대해서 돌면서 표현할 수 있다.라는 의미
-*/
+ */
 
 
 import Foundation
@@ -21,7 +21,6 @@ enum Mood: String, Codable, CaseIterable {
     case okay
     case good
     case great
-    
     
     var imageName: String {
         switch self  {

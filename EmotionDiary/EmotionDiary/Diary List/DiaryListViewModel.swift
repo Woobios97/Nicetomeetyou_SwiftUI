@@ -5,20 +5,6 @@
 //  Created by 김우섭 on 1/1/24.
 //
 
-/*
- To-DO : Sequence -> Dictionary
- 
- AS-IS
- [MoodDiary]
- 
- TO-BE
- [String: [MoodDiary]]
- "2022-04" : [MoodDiary]
- "2022-05" : [MoodDiary]
- "2022-06" : [MoodDiary]
- "2022-07" : [MoodDiary]
-*/
-
 import Foundation
 
 final class DiaryListViewModel: ObservableObject {
@@ -35,5 +21,18 @@ final class DiaryListViewModel: ObservableObject {
         // sorted : "2022-4", "2022-5", "2022-6"
         return dic.keys.sorted { $0 < $1 }
     }
-    
 }
+
+/*
+ To-DO : Sequence -> Dictionary
+ 
+ AS-IS
+ [MoodDiary]
+ 
+ TO-BE
+ [String: [MoodDiary]]
+ "2022-04" : [MoodDiary]
+ "2022-05" : [MoodDiary]
+ "2022-06" : [MoodDiary]
+ "2022-07" : [MoodDiary]
+*/

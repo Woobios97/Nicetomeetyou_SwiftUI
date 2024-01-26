@@ -57,7 +57,6 @@ struct DiaryMoodInputView: View {
                     .cornerRadius(40)
             }
         }
-        
     }
 }
 

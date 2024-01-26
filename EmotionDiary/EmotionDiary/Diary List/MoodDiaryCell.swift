@@ -11,7 +11,6 @@ struct MoodDiaryCell: View {
     
     var diary: MoodDiary
     
-    
     var body: some View {
         Image(systemName: diary.mood.imageName)
             .renderingMode(.original)

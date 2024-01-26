@@ -28,9 +28,7 @@ struct DiaryListView: View {
      */
     
     var body: some View {
-        
         NavigationView {
-            
             VStack {
                 ScrollView {
                     LazyVGrid(columns: layout) {
@@ -89,7 +87,6 @@ extension DiaryListView {
         guard let year = dateComponents.first, let month = dateComponents.last else {
             return id
         }
-        
         
         let calendar = Calendar(identifier: .gregorian)
         let dateComponent = DateComponents(calendar: calendar, year: year, month: month)
