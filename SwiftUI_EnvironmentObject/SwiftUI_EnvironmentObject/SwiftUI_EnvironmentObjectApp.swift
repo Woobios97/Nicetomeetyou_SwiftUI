@@ -14,7 +14,8 @@ struct SwiftUI_EnvironmentObjectApp: App {
     
     var body: some Scene {
         WindowGroup {
-            FirstView().environmentObject(userProfile)  // -> FirstView() 에서 ChildView까지 userProfile에 대한 정보가 넘어가 지는 것이다.
+            FirstView().environmentObject(userProfile)  
+            // -> FirstView() 에서 ChildView까지 userProfile에 대한 정보가 넘어가 지는 것이다.
         }
     }
 }

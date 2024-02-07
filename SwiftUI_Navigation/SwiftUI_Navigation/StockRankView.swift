@@ -30,7 +30,7 @@ struct StockRankView: View {
          }
          StockRankRow(stock: $item)
      }
-     이 코드에서는 1번으로 타갯을 보내고, 2번에는 빈뷰를 했다.
+     이 코드에서는 1번으로 타겟을 보내고, 2번에는 빈뷰를 했다.
      요구된 UI를 만들기위해서 그런 것이다.
      ZStack을 이용해서
      뒤에는 NavigationLink를 넣고
