@@ -1,16 +1,14 @@
-### Swift ###
-# Xcode
-#
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+# macOS 시스템 파일
+.DS_Store
 
-## User settings
+# Xcode User 설정
 xcuserdata/
 
-## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
+# Xcode 8 이하 호환 (Xcode 9 이상에서는 무시할 필요 없음)
 *.xcscmblueprint
 *.xccheckout
 
-## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
+# Xcode 3 이하 호환 (Xcode 4 이상에서는 무시할 필요 없음)
 build/
 DerivedData/
 *.moved-aside
@@ -23,63 +21,83 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 
-## Obj-C/Swift specific
+# Swift 및 Objective-C 관련
 *.hmap
 
-## App packaging
+# 앱 패키징 관련 파일
 *.ipa
 *.dSYM.zip
 *.dSYM
 
-## Playgrounds
+# Playgrounds
 timeline.xctimeline
 playground.xcworkspace
 
-# Swift Package Manager
-# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
-# Packages/
-# Package.pins
-# Package.resolved
-# *.xcodeproj
-# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
-# hence it is not needed unless you have added a package configuration file to your project
-# .swiftpm
-
+# Swift Package Manager 관련
 .build/
+.swiftpm
+Package.pins
+Package.resolved
+Packages/
 
-# CocoaPods
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
-# Pods/
-# Add this line if you want to avoid checking in source code from the Xcode workspace
-# *.xcworkspace
+# CocoaPods 관련
+Pods/
+*.xcworkspace
 
-# Carthage
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
-
+# Carthage 관련
 Carthage/Build/
+Carthage/Checkouts
 
-# Accio dependency management
+# Accio 의존성 관리
 Dependencies/
 .accio/
 
-# fastlane
-# It is recommended to not store the screenshots in the git repo.
-# Instead, use fastlane to re-generate the screenshots whenever they are needed.
-# For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/#source-control
-
+# fastlane 관련 파일
 fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
 
-# Code Injection
-# After new code Injection tools there's a generated folder /iOSInjectionProject
-# https://github.com/johnno1962/injectionforxcode
-
+# 코드 인젝션 프로젝트
 iOSInjectionProject/
 
-# End of https://www.toptal.com/developers/gitignore/api/swift
+# Firebase 관련
+GoogleService-Info.plist
+
+# XCTest 관련
+*.xctest*
+
+# 기타 빌드 결과물
+*.o
+*.a
+*.out
+*.dSYM
+
+# 로그 및 리포트 파일
+*.log
+*.xcactivitylog
+*.crash
+*.dia
+*.dep
+*.bcsymbolmap
+
+# 템포러리 파일
+*.tmp
+*.swp
+*.lock
+*.swo
+
+# 에디터 관련
+.vscode/
+.idea/
+
+# CI/CD 관련
+.fastlane/
+
+# Documentation
+*.docc/
+
+*.xcconfig
+
+# 이미지 관련 (생성된 스크린샷 등)
+screenshots/
